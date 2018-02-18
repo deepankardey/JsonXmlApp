@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.imcs.org/address" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.imcs.org/address">
+
+    <complexType name="address">
+    	<sequence>
+    		<element name="street" type="string"></element>
+    		<element name="city" type="string"></element>
+    		<element name="state" type="string"></element>
+    		<element name="zip" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="address" type="tns:address"></element>
+</schema>

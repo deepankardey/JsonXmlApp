@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer xmlns="http://www.imcs.org/Customer" xmlns:ns2="http://www.imcs.org/address" xmlns:ns3="http://www.imcs.org/PaymentSchema">
+    <customerId>1</customerId>
+    <name>Deepankar</name>
+    <dateOfBirth>2016-01-10-06:00</dateOfBirth>
+    <annualSalary>10000.0</annualSalary>
+    <address>
+        <ns2:street>1145 Oregon Ave</ns2:street>
+        <ns2:city>Beaumont</ns2:city>
+        <ns2:state>TX</ns2:state>
+        <ns2:zip>77705</ns2:zip>
+    </address>
+    <payment>
+        <ns3:cardNumber>1234567890</ns3:cardNumber>
+        <ns3:cardName>Deepankar</ns3:cardName>
+        <ns3:dateFrom>2016-01-10-06:00</ns3:dateFrom>
+        <ns3:cardType>CREDIT</ns3:cardType>
+    </payment>
+</customer>
