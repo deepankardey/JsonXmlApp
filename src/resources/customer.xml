@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:customers xmlns:tns="http://www.imcs.org/Customer" xmlns:tns1="http://www.imcs.org/address" xmlns:tns2="http://www.imcs.org/PaymentSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imcs.org/Customer CustomerSchema.xsd ">
+  <tns:customerId>1</tns:customerId>
+  <tns:name>Deepankar</tns:name>
+  <tns:dateOfBirth>2001-01-01</tns:dateOfBirth>
+  <tns:annualSalary>10000.0</tns:annualSalary>
+  <tns:address>
+    <tns1:street>1145 oregon avenue</tns1:street>
+    <tns1:city>beaumont</tns1:city>
+    <tns1:state>tx</tns1:state>
+    <tns1:zip>77705</tns1:zip>
+  </tns:address>
+  <tns:payment>
+    <tns2:cardNumber>1234567890</tns2:cardNumber>
+    <tns2:cardName>Deepankar</tns2:cardName>
+    <tns2:dateFrom>2001-01-01</tns2:dateFrom>
+    <tns2:dateType>date</tns2:dateType>
+    <tns2:cardType>CREDIT</tns2:cardType>
+  </tns:payment>
+</tns:customers>

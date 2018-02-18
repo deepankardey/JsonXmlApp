@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.imcs.org/Customer"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.imcs.org/Customer"
+	xmlns:Q1="http://www.imcs.org/address" xmlns:Q2="http://www.imcs.org/PaymentSchema">
+
+
+    <import schemaLocation="PaymentSchema.xsd" namespace="http://www.imcs.org/PaymentSchema"></import>
+    <import schemaLocation="AddressSchema.xsd"
+		namespace="http://www.imcs.org/address">
+	</import>
+	<complexType name="customer">
+		<sequence>
+			<element name="customerId" type="int"></element>
+			<element name="name" type="string"></element>
+			<element name="dateOfBirth" type="date"></element>
+			<element name="annualSalary" type="float"></element>
+			<element name="address" type="Q1:address"></element>
+			<element name="payment" type="Q2:payment" maxOccurs="2" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+
+	<element name="customers" type="tns:customer"></element>
+</schema>
